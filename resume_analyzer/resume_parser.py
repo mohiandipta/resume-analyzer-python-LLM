@@ -2,7 +2,7 @@ import pdfplumber
 from llama_cpp import Llama
 import json
 
-llm = Llama(model_path="./models/mistral-7b-instruct.Q4_K_M.gguf", n_ctx=4096)
+llm = Llama(model_path="./models/models--TheBloke--Mistral-7B-Instruct-v0.2-GGUF", n_ctx=4096)
 
 def extract_text_from_pdf(file_path: str) -> str:
     text = ""
